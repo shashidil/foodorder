@@ -10,7 +10,7 @@
   <div class="row col-md-6 col-md-offerset-3">
   <form>
   <!-- Name input -->
-  <div class="form-outline mb-4">
+  <div class="form-outline mb-7">
     <input type="text" id="form4Example1" class="form-control" />
     <label class="form-label" for="form4Example1">Name</label>
   </div>

@@ -13,10 +13,23 @@
     <title>Document</title>
 </head>
 
-<body>
-<div class="row">
-    <div class="col-6">
-    <div class="container">
+<body class="bg-primary-bg-opacity-25">
+<nav class="navbar navbar-expand-sm navbar-light bg-info " >
+        <a href="#" class="navbar-brand">Express Food</a>
+        <button class="navbar-toggler" data-bs-toggler="collapse" data-bs-target="#ccl"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse justify-content-center" id="ccl">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Order</a></li>
+            <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
+        </ul>
+
+        </div>
+        
+    </nav>
+<br>
+<div class="container">
     <div class=" row-cols-2">
         <div class=" panel-primary">
             <!--form-input-->
@@ -87,12 +100,11 @@
 
     </div>
 </div>
-    </div>
-    <div class="col-6">
-        <img src="cusReg.svg" alt="cusReg" class="img-fluid p-5">
-    </div>
-</div>
 
+
+
+
+   
 
 </body>
 
