@@ -23,7 +23,7 @@
 <body>
 
 <!--<div class="d-flex  mt-5 mb-5 justify-content-center bg-primary">Text</div>-->
-<div class="container p-2 m-5">
+<div class="container">
 <div class="col-6">
     <form action="#" class="mb-5 bg-white rounded p-2 m-5 ">
         <h2>Staff Registration</h2>
