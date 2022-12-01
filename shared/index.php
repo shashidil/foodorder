@@ -15,16 +15,19 @@
             padding-right: 300px;
 
         }
-        .banner-image{
+        /* .banner-image{
             background-image: url('cover.jpg');
             background-size: cover;
 
-        }
+        } */
     </style>
     <title>Document</title>
 </head>
-
+<?php include 'C:\xampp\htdocs\foodorder\shared\dbconect.php';
+include 'C:\xampp\htdocs\foodorder\shared\connect.php' ; ?>
 <body class="bg-primary-bg-opacity-25">
+
+
 
     <!--navbar-->
 <nav class="navbar navbar-expand-sm navbar-light bg-info " >
@@ -42,6 +45,8 @@
         
     </nav>
 <br>
+
+
 <!--Reg Form-->
 <div class="banner-image w-100 vh-100 d-flex justify-content-center">
 
@@ -54,34 +59,34 @@
         
             Registration Form
         </div>
-        <form class="m-5" action="#" method="POST">
+        <form class="m-5" action="connect.php" method="POST">
         <div class="row">
         <div class="col">
         <label for="fname" class="form-lable">First Name</label>
-            <input type="email" class="form-control" id="fname" placeholder="First Name" required>
+            <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required>
         </div>
             <div class="col">
             <label for="lname" class="form-lable" >Last Name</label>
-            <input type="email" class="form-control" id="lname" placeholder="Last Name" required>
+            <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" required>
         </div>
        
         </div>
         <div class="col">
             <label for="email" class="form-lable">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
         </div>
         <div class="col-12">
-            <label for="inputAddress2" class="form-label">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
+            <label for="inputAddress" class="form-label">Address </label>
+            <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="Apartment, studio, or floor" required>
         </div>
         <div class="row">
         <div class="col-md-8">
              <label for="inputCity" class="form-label">City</label>
-             <input type="text" class="form-control" id="inputCity" required>
+             <input type="text" class="form-control" id="inputCity" name="inputCity" required>
         </div>
         <div class="col-md-4">
              <label for="inputState" class="form-label">State</label>
-            <select id="inputState" class="form-select">
+            <select id="inputState" name="inputState" class="form-select">
             <option selected>Choose...</option>
             <option value="Galle">Galle</option>
             <option value="Matara">Matara</option>
@@ -93,20 +98,20 @@
         </div>
         <div class="col">
             <label for="telephone" class="form-lable">Telephone</label>
-            <input type="phone number" class="form-control" id="telephone" placeholder="Telephone" required>
+            <input type="phone number" class="form-control" id="telephone" name="telephone" placeholder="Telephone" required>
         </div>
         <div class="col">
             <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Password" required>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
         </div>
         <div class="col">
             <label for="conpassword">Confirm Password</label>
-            <input type="password" class="form-control" id="conpassword" placeholder="Confirm Password" required>
+            <input type="password" class="form-control" id="conpassword" name="conpassword" placeholder="Confirm Password" required>
         </div>
         </form>
          <!--btn submit-->
         <div class="d-grid gap-2 mt-3">
-            <button type="submit" href="#" class="btn btn-primary">Sign in</button>
+            <button type="submit" href="#" name="submit" class="btn btn-primary">Sign in</button>
          </div>
          <!--footer-->
   
